@@ -6,7 +6,7 @@
 /*   By: kadjane <kadjane@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/11 12:36:14 by kadjane           #+#    #+#             */
-/*   Updated: 2021/11/13 11:33:03 by kadjane          ###   ########.fr       */
+/*   Updated: 2021/11/13 15:53:23 by kadjane          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -63,4 +63,16 @@ int main()
 {
 	char str[]=  "akhawlal";
 	printf("%s",ft_strrchr(str, 'a'));
+}*/
+
+/*int main()
+{
+	// int dest[] = {1,2,3,4,5,6,7,8,9,5};
+	// int src[]  = {6,10,6,4,3};
+	char *s1 = NULL;
+	char *s2 = NULL;
+
+	ft_memcpy(s1,s2, sizeof(char) * 4);
+	// printf("%d\n%d\n%d\n%d\n%d\n%d\n%d\n", dest[0], dest[1], dest[2], dest[3], dest[4], dest[5], dest[6]);
+	printf("%s\n", s1);
 }*/

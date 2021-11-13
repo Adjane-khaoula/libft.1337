@@ -6,7 +6,7 @@
 /*   By: kadjane <kadjane@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/11 12:55:41 by kadjane           #+#    #+#             */
-/*   Updated: 2021/11/12 17:53:46 by kadjane          ###   ########.fr       */
+/*   Updated: 2021/11/13 13:05:59 by kadjane          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,12 +20,9 @@
  	unsigned char	*ptr;
 
 	ptr = (unsigned char *)p;
- 	i = 0;
- 	while (i < c)
- 	{
+ 	i = -1;
+ 	while (++i < c)
  		*(ptr++) = (unsigned char)v;
- 		i++;
- 	}
  	return (p);
  }
 

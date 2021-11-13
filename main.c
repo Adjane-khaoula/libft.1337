@@ -6,7 +6,7 @@
 /*   By: kadjane <kadjane@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/11 12:36:14 by kadjane           #+#    #+#             */
-/*   Updated: 2021/11/12 20:23:39 by kadjane          ###   ########.fr       */
+/*   Updated: 2021/11/13 11:33:03 by kadjane          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -56,4 +56,11 @@ int main()
 {
 	char str[]=  "akhawlal";
 	printf("%s",strchr(str, 'z'));
+}*/
+
+/*#include<stdio.h>
+int main()
+{
+	char str[]=  "akhawlal";
+	printf("%s",ft_strrchr(str, 'a'));
 }*/

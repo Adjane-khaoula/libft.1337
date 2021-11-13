@@ -6,7 +6,7 @@
 /*   By: kadjane <kadjane@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/06 10:49:40 by kadjane           #+#    #+#             */
-/*   Updated: 2021/11/12 20:23:59 by kadjane          ###   ########.fr       */
+/*   Updated: 2021/11/13 13:36:30 by kadjane          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,7 @@
 # define LIBFT_H
 
 #include <string.h>
+#include <stdio.h>
 
 int	ft_isalnum(int c);		
 int	ft_strlen(const char *str);

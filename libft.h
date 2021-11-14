@@ -6,7 +6,7 @@
 /*   By: kadjane <kadjane@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/06 10:49:40 by kadjane           #+#    #+#             */
-/*   Updated: 2021/11/13 15:03:31 by kadjane          ###   ########.fr       */
+/*   Updated: 2021/11/14 10:33:22 by kadjane          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,5 +27,6 @@ int	ft_isaplha(int c);
 void	ft_bzero(void *s, size_t n);
 int	ft_isprint(int c);
 char	*ft_strchr(const char *str, int c);
+void	*ft_memcpy(void *dest, const void *src, size_t n);
 
 #endif

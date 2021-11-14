@@ -1,29 +1,37 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memcpy.c                                        :+:      :+:    :+:   */
+/*   ft_memmove.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: kadjane <kadjane@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/11/12 14:35:27 by kadjane           #+#    #+#             */
-/*   Updated: 2021/11/14 10:55:36 by kadjane          ###   ########.fr       */
+/*   Created: 2021/11/13 15:06:41 by kadjane           #+#    #+#             */
+/*   Updated: 2021/11/14 10:57:41 by kadjane          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*ft_memcpy(void *dest, const void *src, size_t n)
+void	*ft_memmove( void *dest, const void *src, size_t s)
 {
 	int				i;
-	unsigned char	*pdest;
-	unsigned char	*psrc;
+	int				j;
+	unsigned char	*cpy;
 
-	i = -1;
-	pdest = (unsigned char *)dest;
-	psrc = (unsigned char *)src;
-	if (!dest && !src)
-		return (NULL);
-	while (*pdest && ++i < (int)n)
-		*(pdest + i) = *(psrc + i);
+	cpy = NULL;
+	i = 0;
+	while (*(unsigned char *)dest && *(unsigned char *)src)
+	{
+		if (dest + i == src + i)
+		{
+			j = -1;
+			while (++j < ft_strlen(src))
+				*(cpy + j) = *((unsigned char *)src + j);
+			ft_memcpy(dest, cpy, s);
+			return (dest);
+		}
+		i++;
+	}
+	ft_memcpy(dest, src, s);
 	return (dest);
 }

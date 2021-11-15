@@ -6,13 +6,15 @@
 /*   By: kadjane <kadjane@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/11 12:07:10 by kadjane           #+#    #+#             */
-/*   Updated: 2021/11/12 18:24:32 by kadjane          ###   ########.fr       */
+/*   Updated: 2021/11/15 13:26:42 by kadjane          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_isaplha(int c)
+#include "libft.h"
+
+int	ft_isalpha(int c)
 {
-	if ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z'))
+	if ((c >= 65 && c <= 90) || (c >= 97 && c <= 122))
 		return (1);
 	else
 		return (0);

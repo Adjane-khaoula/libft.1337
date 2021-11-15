@@ -6,19 +6,16 @@
 /*   By: kadjane <kadjane@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/04 09:58:36 by kadjane           #+#    #+#             */
-/*   Updated: 2021/11/06 10:51:12 by kadjane          ###   ########.fr       */
+/*   Updated: 2021/11/15 13:11:46 by kadjane          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
+
 int	ft_isalnum(int c)
 {
-	if ((c >= 'A' && c <= 'Z') || (c >= 'a' && c <= 'z') || (c >= 0 && c <= 9))
+	if ((c >= 65 && c <= 90) || (c >= 97 && c <= 122) || (c >= 48 && c <= 57))
 		return (1);
 	else
 		return (0);
 }
-/*#include<stdio.h>
-int main()
-{
-	printf("%d",isalnum(2));
-}*/

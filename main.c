@@ -6,7 +6,7 @@
 /*   By: kadjane <kadjane@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/11 12:36:14 by kadjane           #+#    #+#             */
-/*   Updated: 2021/11/14 15:48:20 by kadjane          ###   ########.fr       */
+/*   Updated: 2021/11/15 18:54:30 by kadjane          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -101,5 +101,11 @@ int main()
 // 	i = ft_strlcpy(dest,src,3);
 // 	printf("%s\n",dest);
 // 	printf("%lu\n",i);
-
 // }
+
+/*#include<stdio.h>
+int main()
+{
+	printf("%d",isalnum(2));
+}*/
+ƒ

@@ -3,24 +3,15 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strdup.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: kadjane <marvin@42.fr>                     +#+  +:+       +#+        */
+/*   By: kadjane <kadjane@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/21 17:25:34 by kadjane           #+#    #+#             */
-/*   Updated: 2021/08/24 12:28:43 by kadjane          ###   ########.fr       */
+/*   Updated: 2021/11/15 11:48:59 by kadjane          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include<stdlib.h>
-int	ft_strlen(char *str)
-{
-	int	i;
-
-	i = 0;
-	while (str[i])
-		i++;
-	return (i);
-}
-
+#include "libft.h"
 char	*ft_strdup(char *src)
 {
 	int		l;

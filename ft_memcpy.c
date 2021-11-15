@@ -6,7 +6,7 @@
 /*   By: kadjane <kadjane@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/12 14:35:27 by kadjane           #+#    #+#             */
-/*   Updated: 2021/11/14 10:55:36 by kadjane          ###   ########.fr       */
+/*   Updated: 2021/11/15 12:50:41 by kadjane          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,18 @@ void	*ft_memcpy(void *dest, const void *src, size_t n)
 	psrc = (unsigned char *)src;
 	if (!dest && !src)
 		return (NULL);
-	while (*pdest && ++i < (int)n)
+	while (++i < (int)n)
 		*(pdest + i) = *(psrc + i);
 	return (dest);
 }
+
+// int main()
+// {
+// 	char src[] = "test basic du memcpy !";
+// 	char buff1[22];
+// 	char buff2[22];
+
+// 	ft_memcpy(buff2, src, 22);
+// 	printf("{%s}\n", buff1);
+// 	return (0);
+// }

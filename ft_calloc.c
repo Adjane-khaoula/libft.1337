@@ -6,14 +6,20 @@
 /*   By: kadjane <kadjane@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/15 23:49:39 by kadjane           #+#    #+#             */
-/*   Updated: 2021/11/15 23:56:25 by kadjane          ###   ########.fr       */
+/*   Updated: 2021/11/16 12:10:01 by kadjane          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include <stdlib.h>
 #include "libft.h"
- void *calloc(size_t count, size_t size)
+ void *ft_calloc(size_t cnt, size_t size)
  {
-	 unsigned char *p;
+	char *p;
 
-	 p = (unsigned char *)malloc()
+	p = (char *)malloc(cnt * size);
+	if (!p)
+		return (NULL);
+	ft_bzero(p,cnt * size);
+	 return (p);
  }
+ 

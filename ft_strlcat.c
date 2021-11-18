@@ -6,7 +6,7 @@
 /*   By: kadjane <kadjane@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/14 16:05:54 by kadjane           #+#    #+#             */
-/*   Updated: 2021/11/15 12:51:20 by kadjane          ###   ########.fr       */
+/*   Updated: 2021/11/18 06:30:45 by kadjane          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,39 +14,39 @@
 
 size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 {
-	int	i;
-	int	s;
-	int	d;
+	size_t	i;
+	size_t	lensrc;
+	size_t	lendes;
 
-	s = ft_strlen(src);
-	d = ft_strlen(dst);
-	i = -1;
-
-	if ((int)dstsize > d)
-	{
-		while (dst)
-			dst++;
-		while (*src && ++i < (int)dstsize - (d + 1))
-			*dst++ = *src++;
-		*dst = 0;
-		return(d + s);
-	}
-	else 
-	if ((int)dstsize < d)
-		return (dstsize + s);
-	else
-		return(d + s);
+	lensrc = ft_strlen(src);
+	lendes = ft_strlen(dst);
+	i = 0;
+	if ((dstsize == 0 && !dst ) || dstsize == 0)
+		return(lensrc);	
+	if ( dstsize >= lendes)
+		{
+			while (*src && i < (dstsize -(lendes + 1)))
+			{
+				dst[lendes + i ] = *(src++);
+				i++;
+			}
+			*dst = '\0';
+			return (lensrc + lendes);
+		}
+		return (dstsize + lensrc);
 }
 	
 #include<stdio.h>
 #include<string.h>
 
-// int main()
-// {
-// 	char *dest = strdup("q");
-// 	char *src = strdup("dfg");
+int main()
+{
+	char *str = "n\0AA";
+	char buff1[0xF00] = "\0AAAAAAAAAAAAAAAA";
+	char buff2[0xF00] = "\0AAAAAAAAAAAAAAAA";
 
-// 	printf("{%lu}\n",ft_strlcat(dest,src,4));
-// 	printf("%s\n",dest);
-
-// }
+	printf("{%lu}\n",ft_strlcat(buff1,str,10));
+	printf("%s\n\n\n",buff1);
+	printf("{%lu}\n",strlcat(buff2,str,10));
+	printf("%s\n",buff2);
+}

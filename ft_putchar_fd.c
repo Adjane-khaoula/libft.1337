@@ -1,36 +1,30 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strdup.c                                        :+:      :+:    :+:   */
+/*   ft_putchar.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: kadjane <kadjane@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/08/21 17:25:34 by kadjane           #+#    #+#             */
-/*   Updated: 2021/11/19 18:20:17 by kadjane          ###   ########.fr       */
+/*   Created: 2021/08/07 09:38:55 by kadjane           #+#    #+#             */
+/*   Updated: 2021/11/19 13:27:42 by kadjane          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
-char	*ft_strdup(char *src)
+void ft_putchar_fd(char c, int fd)
 {
-	int		l;
-	int		i;
-	char	*p;
-	char	*p2;
-
-	i = 0;
-	l = ft_strlen(src) + 1;
-	p = (char *)malloc(l);
-	p2 = p;
-	if (p == 0)
-		return (0);
-	while (src[i])
-	{
-		*p = src[i];
-		p++;
-		i++;
-	}
-	*p = '\0';
-	return (p2);
+	write (fd, &c, 1);
 }
+// int main ()
+// {
+// 	char f[] = "hajar";
+// 	int i;
+
+// 	i = 0;
+// 	while (f[i])
+// 	{
+// 		ft_putchar_fd(f[i], 1);
+		
+// 	i++;
+// 	}
+// }

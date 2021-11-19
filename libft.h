@@ -6,13 +6,14 @@
 /*   By: kadjane <kadjane@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/06 10:49:40 by kadjane           #+#    #+#             */
-/*   Updated: 2021/11/17 21:15:09 by kadjane          ###   ########.fr       */
+/*   Updated: 2021/11/19 18:48:42 by kadjane          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 # define LIBFT_H
 
+#include<unistd.h>
 #include <string.h>
 #include <stdio.h>
 #include <stdlib.h>
@@ -35,4 +36,17 @@ char *ft_strnstr(const char *str1, const char *str2, size_t len);
  int	ft_atoi(const char *str);
  void	*ft_memmove( void *dest, const void *src, size_t s);
  size_t	ft_strlcpy(char *dst,const char *src, size_t s);
+ void ft_putstr_fd(char *s, int fd);
+ void ft_putchar_fd(char c, int fd);
+ void	*ft_memcpy(void *dest, const void *src, size_t n);
+ int	ft_memcmp(const void *ptr1, const void *ptr2, size_t size);
+ size_t	ft_strlcat(char *dst, const char *src, size_t dstsize);
+ void ft_putnbr_fd(int n, int fd);
+ void ft_putchar_fd(char c, int fd);
+ void ft_putstr_fd(char *s, int fd);
+ void ft_putendl_fd(char *s, int fd);
+ char *ft_substr(char const *s, unsigned int start, size_t len);
+ char	*ft_strdup(char *src);
+ char *ft_strmapi(char const *s, char (*f)(unsigned int, char));
+ 
 #endif

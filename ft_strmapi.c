@@ -6,11 +6,11 @@
 /*   By: kadjane <kadjane@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/19 18:31:47 by kadjane           #+#    #+#             */
-/*   Updated: 2021/11/19 18:48:29 by kadjane          ###   ########.fr       */
+/*   Updated: 2021/11/20 12:15:08 by kadjane          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-char *ft_strmapi(char const *s, char (*f)(unsigned int, char))
-{
+// char *ft_strmapi(char const *s, char (*f)(unsigned int, char))
+// {
 	
-}
+// }

@@ -6,7 +6,7 @@
 /*   By: kadjane <kadjane@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/06 10:49:40 by kadjane           #+#    #+#             */
-/*   Updated: 2021/11/19 18:48:42 by kadjane          ###   ########.fr       */
+/*   Updated: 2021/11/20 23:06:18 by kadjane          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@
 #include <stdlib.h>
 
 int	ft_isalnum(int c);		
-int	ft_strlen(const char *str);
+size_t	ft_strlen(const char *str);
 void	*ft_memset(void *p, int v, size_t c);
 int	ft_tolower(int c);
 int	ft_toupper(int c);
@@ -48,5 +48,9 @@ char *ft_strnstr(const char *str1, const char *str2, size_t len);
  char *ft_substr(char const *s, unsigned int start, size_t len);
  char	*ft_strdup(char *src);
  char *ft_strmapi(char const *s, char (*f)(unsigned int, char));
+ char *ft_strjoin(char const *s1, char const *s2);
+ char *ft_strtrim(char const *s1, char const *set);
+ char *ft_itoa(int n);
+ void *ft_calloc(size_t cnt, size_t size);
  
 #endif

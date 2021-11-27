@@ -6,25 +6,27 @@
 /*   By: kadjane <kadjane@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/20 18:19:59 by kadjane           #+#    #+#             */
-/*   Updated: 2021/11/21 02:35:51 by kadjane          ###   ########.fr       */
+/*   Updated: 2021/11/27 19:13:12 by kadjane          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-char *ft_cpy(char *str, char *s)
+
+char	*ft_cpy(char *str, char *s)
 {
-	int i;
+	int	i;
 
 	i = 0;
 	while (*s)
-		str[i++]= *s++;
-	str[i] = '\0';
+		*(str + i++) = *s++;
+	*(str + i) = '\0';
 	return (str);
 }
 
-int lenbr(int n)
+int	lenbr(int n)
 {
 	int	i;
+
 	i = 1;
 	if (n < 0)
 	{
@@ -46,18 +48,18 @@ int lenbr(int n)
 	return (i);
 }
 
-char *ispositif(int n)
+char	*ispositif(int n)
 {
-	int m;
-	int k;
-	char *s;
-	int i;
+	int		m;
+	int		k;
+	char	*s;
+	int		i;
 
 	i = lenbr(n);
 	m = n;
 	k = n;
 	s = (char *)malloc(i + 1);
-	s[i] = '\0';
+	*(s + i) = '\0';
 	if (!s)
 		return (NULL);
 	while (k >= 10)
@@ -72,17 +74,17 @@ char *ispositif(int n)
 
 char	*isnegatif(int n)
 {
-	int m;
-	int k;
-	char *s;
-	int i;
+	int		m;
+	int		k;
+	char	*s;
+	int		i;
 
 	k = n * -1;
 	i = lenbr(n);
 	s = (char *)malloc(i + 1);
 	if (!s)
 		return (NULL);
-	s[i] = '\0';
+	*(s + i) = '\0';
 	while (k >= 10)
 	{
 		m = k % 10;
@@ -94,12 +96,12 @@ char	*isnegatif(int n)
 	return (s);
 }
 
-char *ft_itoa(int n)
+char	*ft_itoa(int n)
 {
-	int	i;
-	int m;
-	int k;
-	char *s;
+	int		i;
+	int		m;
+	int		k;
+	char	*s;
 
 	i = lenbr(n);
 	m = n;
@@ -108,8 +110,8 @@ char *ft_itoa(int n)
 	{
 		s = (char *)malloc(12);
 		if (!s)
-		return(NULL);
-		ft_cpy(s,"-2147483648");
+			return (0);
+		ft_cpy(s, "-2147483648");
 	}
 	if (n < 0 && n != -2147483648)
 		s = isnegatif(n);
@@ -118,7 +120,8 @@ char *ft_itoa(int n)
 	return (s);
 }
 
-// int main()
+//  int main()
 // {
-// 	printf("%s",ft_itoa(-2147483648));
+//  	printf("%s",ft_itoa(2147483));
+
 // }

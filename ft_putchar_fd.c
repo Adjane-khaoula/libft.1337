@@ -1,17 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putchar.c                                       :+:      :+:    :+:   */
+/*   ft_putchar_fd.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: kadjane <kadjane@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/07 09:38:55 by kadjane           #+#    #+#             */
-/*   Updated: 2021/11/19 13:27:42 by kadjane          ###   ########.fr       */
+/*   Updated: 2021/11/27 19:02:55 by kadjane          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-void ft_putchar_fd(char c, int fd)
+
+void	ft_putchar_fd(char c, int fd)
 {
 	write (fd, &c, 1);
 }
@@ -24,7 +25,6 @@ void ft_putchar_fd(char c, int fd)
 // 	while (f[i])
 // 	{
 // 		ft_putchar_fd(f[i], 1);
-		
 // 	i++;
 // 	}
 // }

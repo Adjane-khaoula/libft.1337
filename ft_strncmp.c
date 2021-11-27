@@ -6,7 +6,7 @@
 /*   By: kadjane <kadjane@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/12 08:16:31 by kadjane           #+#    #+#             */
-/*   Updated: 2021/11/15 18:51:13 by kadjane          ###   ########.fr       */
+/*   Updated: 2021/11/27 21:05:05 by kadjane          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,6 @@
 int	ft_strncmp(const char *s1, const char *s2, size_t n)
 {
 	unsigned int	i;
-	// unsigned char	*iter_s;
 
 	i = -1;
 	if (!n)

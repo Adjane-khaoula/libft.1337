@@ -6,13 +6,13 @@
 /*   By: kadjane <kadjane@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/14 10:31:53 by kadjane           #+#    #+#             */
-/*   Updated: 2021/11/19 14:14:18 by kadjane          ###   ########.fr       */
+/*   Updated: 2021/11/27 19:05:51 by kadjane          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void ft_putnbr_fd(int n, int fd)
+void	ft_putnbr_fd(int n, int fd)
 {
 	if (n == -2147483648)
 		write (fd, "-2147483648", 11);

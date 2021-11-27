@@ -1,29 +1,38 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putstr_fd.c                                     :+:      :+:    :+:   */
+/*   ft_striteri.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: kadjane <kadjane@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/08/09 09:26:53 by kadjane           #+#    #+#             */
-/*   Updated: 2021/11/27 19:07:32 by kadjane          ###   ########.fr       */
+/*   Created: 2021/11/27 21:57:45 by kadjane           #+#    #+#             */
+/*   Updated: 2021/11/27 22:51:12 by kadjane          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include"libft.h"
+// void fct(unsigned int i, char *c)
+// {
+// 	c += i;
+// }
 
-void	ft_putstr_fd(char *s, int fd)
+void	ft_striteri(char *s, void (f)(unsigned int, char*))
 {
+	int	i;
+
 	if (!s)
 		return ;
-	while (*s)
+	i = 0;
+	while (s)
 	{
-		write(fd, s, 1);
-		s++;
+		f(i, &s[i]);
+		i++;
 	}
 }
 
 // int main()
 // {
-// 	ft_putstr_fd("test",1);
+//     char *s = strdup("khawla");
+//     ft_striteri(s,&fct);
+// 	printf("%s\n", s);
 // }

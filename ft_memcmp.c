@@ -6,7 +6,7 @@
 /*   By: kadjane <kadjane@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/18 18:30:51 by kadjane           #+#    #+#             */
-/*   Updated: 2021/11/18 21:41:00 by kadjane          ###   ########.fr       */
+/*   Updated: 2021/11/27 18:59:28 by kadjane          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,9 +16,9 @@ int	ft_memcmp(const void *ptr1, const void *ptr2, size_t size)
 {
 	unsigned char	*pptr1;
 	unsigned char	*pptr2;
-	//  size_t	i;
-	 pptr1 = (unsigned char *)ptr1;
-	 pptr2 = (unsigned char *)ptr2;
+
+	pptr1 = (unsigned char *)ptr1;
+	pptr2 = (unsigned char *)ptr2;
 	while (size != 0)
 	{
 		if (*pptr1++ != *pptr2++)
@@ -27,7 +27,6 @@ int	ft_memcmp(const void *ptr1, const void *ptr2, size_t size)
 	}
 	return (0);
 }
-
 
 // 	i = 0;
 // 	pptr1 = (unsigned char *)ptr1;

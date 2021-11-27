@@ -6,7 +6,7 @@
 /*   By: kadjane <kadjane@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/14 16:05:54 by kadjane           #+#    #+#             */
-/*   Updated: 2021/11/18 16:01:43 by kadjane          ###   ########.fr       */
+/*   Updated: 2021/11/27 20:56:22 by kadjane          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,32 +21,26 @@ size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 	lensrc = ft_strlen(src);
 	lendes = ft_strlen(dst);
 	i = 0;
-	if ((dstsize == 0 && !dst ) || dstsize == 0)
-		return(lensrc);	
-	if ( dstsize >= lendes)
-		{
-			while (*src && i < (dstsize -(lendes + 1)))
-			{
-				dst[lendes + i ] = *(src++);
-				i++;
-			}
-			dst[lendes + i] = '\0';
-			return (lensrc + lendes);
-		}
-	return (dstsize + lensrc);
+	if (!dst || dstsize == 0)
+		return (lensrc);
+	if (dstsize <= lendes)
+		return (dstsize + lensrc);
+	while (*src && i < (dstsize - (lendes + 1)))
+		dst[lendes + i++] = *(src++);
+	dst[lendes + i] = '\0';
+	return (lensrc + lendes);
 }
-	
-// #include<stdio.h>
-// #include<string.h>
 
 // int main()
 // {
-// 	char *str = "n\0AA";
-// 	char buff1[0xF00] = "\0AAAAAAAAAAAAAAAA";
-// 	char buff2[0xF00] = "\0AAAAAAAAAAAAAAAA";
+// 	char *str = "AAAAAAAAA";
+// 	char buff1[30];
+// 	 ft_memset(buff1, 0, 30);
+// 	char buff2[30];
+// 	 ft_memset(buff1, 0, 30);
 
-// 	printf("{%lu}\n",ft_strlcat(buff1,str,10));
-// 	printf("%s\n\n\n",buff1);
-// 	printf("{%lu}\n",strlcat(buff2,str,10));
+// 	printf("{%lu}******************************\n",ft_strlcat(buff1,str,1));
+// 	printf("%s*******************************\n\n\n",buff1);
+// 	printf("{%lu}\n",strlcat(buff2,str,1));
 // 	printf("%s\n",buff2);
 // }

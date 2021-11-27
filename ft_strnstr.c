@@ -6,7 +6,7 @@
 /*   By: kadjane <kadjane@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/15 20:44:17 by kadjane           #+#    #+#             */
-/*   Updated: 2021/11/15 23:09:40 by kadjane          ###   ########.fr       */
+/*   Updated: 2021/11/27 21:37:55 by kadjane          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,8 @@ char	*ft_strnstr(const char *str1, const char *str2, size_t len)
 		iter_s2 = (char *)str2;
 		while (*iter2_s1 && *iter_s2 && *iter2_s1++ == *iter_s2++)
 			;
-		if (!*iter_s2 && *(iter_s2 - 1) == *(iter2_s1 - 1) && i + ft_strlen(str2) <= len)
+		if (!*iter_s2 && *(iter_s2 - 1) == *(iter2_s1 - 1)
+			&& i + ft_strlen(str2) <= len)
 			return (iter_s1);
 	}
 	return (NULL);

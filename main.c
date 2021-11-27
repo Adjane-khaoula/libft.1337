@@ -6,13 +6,13 @@
 /*   By: kadjane <kadjane@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/11 12:36:14 by kadjane           #+#    #+#             */
-/*   Updated: 2021/11/16 23:25:07 by kadjane          ###   ########.fr       */
+/*   Updated: 2021/11/27 21:24:25 by kadjane          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include<stdio.h>
-#include "libft.h"
-#include<stdio.h>
+// #include<stdio.h>
+// #include "libft.h"
+// #include<stdio.h>
 
 /*int	main(void)
 {
@@ -73,7 +73,8 @@ int main()
 	char *s2 = NULL;
 
 	ft_memcpy(s1,s2, sizeof(char) * 4);
-	// printf("%d\n%d\n%d\n%d\n%d\n%d\n%d\n", dest[0], dest[1], dest[2], dest[3], dest[4], dest[5], dest[6]);
+	// printf("%d\n%d\n%d\n%d\n%d\n%d\n%d\n", dest[0], dest[1], dest[2], 
+	// dest[3], dest[4], dest[5], dest[6]);
 	printf("%s\n", s1);
 }*/
 
@@ -85,7 +86,8 @@ int main()
 // 	// char s2[] = "lkjhgfdsapoiuytrewq";
 
 // 	ft_memcpy(dest,src, sizeof(int) * 2);
-// 	printf("%d\n%d\n%d\n%d\n%d\n%d\n%d\n", dest[0], dest[1], dest[2], dest[3], dest[4], dest[5], dest[6]);
+// printf("%d\n%d\n%d\n%d\n%d\n%d\n%d\n", dest[0], dest[1], dest[2],
+//  dest[3], dest[4], dest[5], dest[6]);
 // 	//printf("%s\n", s1);
 // }
 

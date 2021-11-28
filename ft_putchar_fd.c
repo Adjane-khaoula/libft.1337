@@ -6,7 +6,7 @@
 /*   By: kadjane <kadjane@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/07 09:38:55 by kadjane           #+#    #+#             */
-/*   Updated: 2021/11/27 19:02:55 by kadjane          ###   ########.fr       */
+/*   Updated: 2021/11/28 11:59:44 by kadjane          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,15 +16,3 @@ void	ft_putchar_fd(char c, int fd)
 {
 	write (fd, &c, 1);
 }
-// int main ()
-// {
-// 	char f[] = "hajar";
-// 	int i;
-
-// 	i = 0;
-// 	while (f[i])
-// 	{
-// 		ft_putchar_fd(f[i], 1);
-// 	i++;
-// 	}
-// }

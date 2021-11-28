@@ -6,7 +6,7 @@
 /*   By: kadjane <kadjane@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/09 09:26:53 by kadjane           #+#    #+#             */
-/*   Updated: 2021/11/27 19:07:32 by kadjane          ###   ########.fr       */
+/*   Updated: 2021/11/28 12:00:13 by kadjane          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,8 +22,3 @@ void	ft_putstr_fd(char *s, int fd)
 		s++;
 	}
 }
-
-// int main()
-// {
-// 	ft_putstr_fd("test",1);
-// }

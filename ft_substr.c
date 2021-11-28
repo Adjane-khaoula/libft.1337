@@ -6,7 +6,7 @@
 /*   By: kadjane <kadjane@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/19 15:48:12 by kadjane           #+#    #+#             */
-/*   Updated: 2021/11/27 21:28:49 by kadjane          ###   ########.fr       */
+/*   Updated: 2021/11/28 11:38:41 by kadjane          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,10 +34,3 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	*nvs = '\0';
 	return (pnvs);
 }
-
-// int main()
-// {
-// 	char *s;
-// 	s = ft_substr("tripouille", 100, 1);
-// 	printf("|%s|\n",s);
-// }

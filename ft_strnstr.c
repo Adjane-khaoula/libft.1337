@@ -6,7 +6,7 @@
 /*   By: kadjane <kadjane@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/15 20:44:17 by kadjane           #+#    #+#             */
-/*   Updated: 2021/11/27 21:37:55 by kadjane          ###   ########.fr       */
+/*   Updated: 2021/11/28 11:37:09 by kadjane          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,16 +35,3 @@ char	*ft_strnstr(const char *str1, const char *str2, size_t len)
 	}
 	return (NULL);
 }
-//   #include<stdio.h>
-//   #include<string.h>
-
-// int main()
-// {
-// 	char *s1 = "oh no not the empty string !";
-// 	char *s2 = "";
-// 	size_t max = strlen(s2);
-// 	char *i1 = strnstr(s1, s2, max);
-// 	char *i2 = ft_strnstr(s1, s2, max);
-// 	printf("%s\n",i1);
-// 	printf("%s\n",i2);
-// }

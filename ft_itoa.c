@@ -6,7 +6,7 @@
 /*   By: kadjane <kadjane@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/20 18:19:59 by kadjane           #+#    #+#             */
-/*   Updated: 2021/11/27 19:13:12 by kadjane          ###   ########.fr       */
+/*   Updated: 2021/11/28 12:02:12 by kadjane          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -119,9 +119,3 @@ char	*ft_itoa(int n)
 		s = ispositif(n);
 	return (s);
 }
-
-//  int main()
-// {
-//  	printf("%s",ft_itoa(2147483));
-
-// }

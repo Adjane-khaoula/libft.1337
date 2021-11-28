@@ -6,7 +6,7 @@
 /*   By: kadjane <kadjane@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/22 15:14:09 by kadjane           #+#    #+#             */
-/*   Updated: 2021/11/27 20:43:03 by kadjane          ###   ########.fr       */
+/*   Updated: 2021/11/28 11:55:25 by kadjane          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -91,11 +91,3 @@ char	**ft_split(char const *s, char c)
 	rempltab(s, tabstr, c);
 	return (tabstr);
 }
-
-// int main()
-// {
-// 	char **p = ft_split("      split       this for   me  !       ", ' ');
-// 	while (*p)
-// printf("%s\n", *p++);
-// printf("%d\n", nbrword("      split       this for   me  !       ", ' '));
-// }

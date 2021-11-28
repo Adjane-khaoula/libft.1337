@@ -6,7 +6,7 @@
 /*   By: kadjane <kadjane@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/04 17:46:11 by kadjane           #+#    #+#             */
-/*   Updated: 2021/11/20 12:32:13 by kadjane          ###   ########.fr       */
+/*   Updated: 2021/11/28 11:36:29 by kadjane          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,8 +21,3 @@ size_t	ft_strlen(const char *str)
 		i++;
 	return (i);
 }
-// #include<stdio.h>
-// int main()
-// {
-// 	printf("%lu",strlen(0));
-// }

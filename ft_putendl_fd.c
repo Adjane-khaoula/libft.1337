@@ -6,7 +6,7 @@
 /*   By: kadjane <kadjane@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/19 15:32:49 by kadjane           #+#    #+#             */
-/*   Updated: 2021/11/27 19:05:11 by kadjane          ###   ########.fr       */
+/*   Updated: 2021/11/28 11:55:14 by kadjane          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,8 +23,3 @@ void	ft_putendl_fd(char *s, int fd)
 	}
 	write(fd, "\n", 1);
 }
-
-// int main()
-// {
-// 	ft_putendl_fd("test",1);
-// }

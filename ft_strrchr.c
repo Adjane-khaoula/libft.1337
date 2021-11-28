@@ -6,7 +6,7 @@
 /*   By: kadjane <kadjane@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/12 20:24:33 by kadjane           #+#    #+#             */
-/*   Updated: 2021/11/27 21:13:03 by kadjane          ###   ########.fr       */
+/*   Updated: 2021/11/28 11:37:52 by kadjane          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,10 +26,3 @@ char	*ft_strrchr(const char *str, int c)
 			return (iter + 1);
 	return (NULL);
 }
-
-/*#include<stdio.h>
-int main()
-{
-	char *str=  "abbbbbbbb";
-	printf("%s",ft_strrchr(str, 'a'));
-}*/

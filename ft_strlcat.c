@@ -6,7 +6,7 @@
 /*   By: kadjane <kadjane@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/14 16:05:54 by kadjane           #+#    #+#             */
-/*   Updated: 2021/11/27 20:56:22 by kadjane          ###   ########.fr       */
+/*   Updated: 2021/11/28 11:56:59 by kadjane          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,17 +30,3 @@ size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 	dst[lendes + i] = '\0';
 	return (lensrc + lendes);
 }
-
-// int main()
-// {
-// 	char *str = "AAAAAAAAA";
-// 	char buff1[30];
-// 	 ft_memset(buff1, 0, 30);
-// 	char buff2[30];
-// 	 ft_memset(buff1, 0, 30);
-
-// 	printf("{%lu}******************************\n",ft_strlcat(buff1,str,1));
-// 	printf("%s*******************************\n\n\n",buff1);
-// 	printf("{%lu}\n",strlcat(buff2,str,1));
-// 	printf("%s\n",buff2);
-// }

@@ -6,7 +6,7 @@
 /*   By: kadjane <kadjane@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/06 10:49:40 by kadjane           #+#    #+#             */
-/*   Updated: 2021/11/27 22:53:03 by kadjane          ###   ########.fr       */
+/*   Updated: 2021/11/27 23:11:28 by kadjane          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -56,5 +56,5 @@ char	*ft_strtrim(char const *s1, char const *set);
 char	*ft_itoa(int n);
 void	*ft_calloc(size_t cnt, size_t size);
 char	**ft_split(char const *s, char c);
-void	ft_striteri(char *s, void (f)(unsigned int, char*));
+void	ft_striteri(char *s, void (*f)(unsigned int, char*));
 #endif

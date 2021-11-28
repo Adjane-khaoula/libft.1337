@@ -6,7 +6,7 @@
 /*   By: kadjane <kadjane@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/20 11:11:05 by kadjane           #+#    #+#             */
-/*   Updated: 2021/11/27 20:45:51 by kadjane          ###   ########.fr       */
+/*   Updated: 2021/11/28 11:35:10 by kadjane          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,13 +32,3 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	*s = '\0';
 	return (ps);
 }
-
-// int main ()
-// {
-// 	char *s1 = ft_strjoin("" , "42");
-// //	char *s2 = strdup("layhdik");
-// //	char *s;
-// //	s = ft_strjoin(NULL , NULL);
-// 	printf("%s\n", s1);
-// 	free(s1);
-// }

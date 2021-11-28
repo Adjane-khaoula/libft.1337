@@ -6,11 +6,11 @@
 /*   By: kadjane <kadjane@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/20 13:00:20 by kadjane           #+#    #+#             */
-/*   Updated: 2021/11/27 21:23:17 by kadjane          ###   ########.fr       */
+/*   Updated: 2021/11/28 12:01:03 by kadjane          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include"libft.h"
+#include "libft.h"
 
 int	dim1(char const *s1, char const *set)
 {
@@ -70,11 +70,3 @@ char	*ft_strtrim(char const *s1, char const *set)
 	s[j] = '\0';
 	return (s);
 }
-
-// k - i + 2 car l - i = 6 et j commance a 0 et 1 pour '\0'
-// int main ()
-// {
-// 	char *s;
-// 	s = ft_strtrim("  \t \t \n   \n\n\n\t"," \n\t");
-// 	printf ("%s\n",s);
-// }
